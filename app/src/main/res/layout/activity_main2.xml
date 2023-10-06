@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/icon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+  <EditText
+      android:id="@+id/city_et"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:ems="18"
+      android:inputType="textPersonName"
+      android:text="Name"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/submit"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="25dp"
+      android:text="Button"
+      app:layout_constraintEnd_toEndOf="@+id/city_et"
+      app:layout_constraintStart_toStartOf="@+id/city_et"
+      app:layout_constraintTop_toBottomOf="@+id/city_et" />
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="156dp"
+      android:layout_height="57dp"
+      android:layout_marginTop="12dp"
+      android:gravity="center"
+      android:text="CITY"
+      android:textSize="34sp"
+      app:layout_constraintEnd_toEndOf="@+id/submit"
+      app:layout_constraintHorizontal_bias="0.502"
+      app:layout_constraintStart_toStartOf="@+id/submit"
+      app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+  <ImageView
+      android:id="@+id/img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="4dp"
+      app:layout_constraintEnd_toEndOf="@+id/name"
+      app:layout_constraintStart_toStartOf="@+id/name"
+      app:layout_constraintTop_toBottomOf="@+id/name"
+      app:srcCompat="@drawable/ic_launcher_background"
+      tools:srcCompat="@tools:sample/avatars" />
+
+  <TextView
+      android:id="@+id/temp"
+      android:layout_width="157dp"
+      android:layout_height="46dp"
+      android:layout_marginTop="12dp"
+      android:gravity="center"
+      android:text="TextView"
+      android:textSize="24sp"
+      app:layout_constraintEnd_toEndOf="@+id/img"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="@+id/img"
+      app:layout_constraintTop_toBottomOf="@+id/img" />
+
+  <TextView
+      android:id="@+id/status"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="12dp"
+      android:text="TextView"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/temp" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="12dp"
+      android:text="TextView"
+      app:layout_constraintBottom_toBottomOf="@+id/status"
+      app:layout_constraintStart_toEndOf="@+id/status"
+      app:layout_constraintTop_toTopOf="@+id/status" />
+</androidx.constraintlayout.widget.ConstraintLayout>
